@@ -1,0 +1,292 @@
+/* ============================================================
+   CineFind — Movie Discovery App
+   Design: rạp chiếu bóng ban đêm — marquee vàng, vé xé, film-strip
+   ============================================================ */
+
+:root{
+  /* ---- Dark mode (mặc định) ---- */
+  --bg: #120e0c;
+  --panel: #1c1614;
+  --panel-2: #241c19;
+  --line: #33281f;
+  --text: #f2e9dd;
+  --muted: #9c8a7c;
+  --accent: #e3a83b;
+  --accent-2: #b23a2e;
+  --accent-dim: rgba(227,168,59,0.14);
+  --shadow: 0 20px 50px -20px rgba(0,0,0,0.7);
+}
+
+html.light{
+  --bg: #f6f1e7;
+  --panel: #ffffff;
+  --panel-2: #f0e9da;
+  --line: #e2d6c3;
+  --text: #241c17;
+  --muted: #7c6f60;
+  --accent: #b9822c;
+  --accent-2: #a32e27;
+  --accent-dim: rgba(185,130,44,0.12);
+  --shadow: 0 20px 50px -20px rgba(36,28,23,0.18);
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Manrope', sans-serif;
+  line-height:1.6;
+  transition:background .25s ease, color .25s ease;
+}
+
+.display{font-family:'Bebas Neue', sans-serif; letter-spacing:0.5px;}
+.mono{font-variant-numeric:tabular-nums; font-feature-settings:"tnum";}
+
+a{color:inherit;}
+
+/* ============ HEADER / MARQUEE ============ */
+.site-header{
+  position:sticky; top:0; z-index:20;
+  background:var(--panel);
+  border-bottom:1px solid var(--line);
+}
+.marquee-lights{
+  height:6px;
+  background-image:radial-gradient(circle, var(--accent) 2.5px, transparent 2.6px);
+  background-size:22px 6px;
+  background-repeat:repeat-x;
+  background-position:0 center;
+  opacity:0.55;
+  animation:marquee-chase 1.4s steps(1) infinite;
+}
+@keyframes marquee-chase{
+  0%{background-position:0 center;}
+  50%{background-position:11px center;}
+  100%{background-position:22px center;}
+}
+.header-inner{
+  max-width:1280px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 28px;
+}
+.brand{display:flex; align-items:center; gap:10px;}
+.brand-mark{font-size:22px;}
+.brand-name{font-family:'Bebas Neue', sans-serif; font-size:28px; letter-spacing:1.5px; color:var(--accent);}
+
+.header-actions{display:flex; align-items:center; gap:18px;}
+.prev-link{
+  font-size:13px; color:var(--muted); text-decoration:none;
+  padding:6px 12px; border:1px solid var(--line); border-radius:20px;
+  transition:color .18s ease, border-color .18s ease;
+}
+.prev-link:hover{color:var(--accent); border-color:var(--accent);}
+
+.theme-switch{display:flex; align-items:center; gap:8px; cursor:pointer; position:relative;}
+.theme-switch input{position:absolute; opacity:0; width:0; height:0;}
+.switch-track{
+  width:42px; height:24px; border-radius:20px;
+  background:var(--panel-2); border:1px solid var(--line);
+  position:relative; transition:background .2s ease;
+}
+.switch-thumb{
+  position:absolute; top:2px; left:2px;
+  width:18px; height:18px; border-radius:50%;
+  background:var(--accent);
+  transition:transform .22s cubic-bezier(.4,0,.2,1);
+}
+.theme-switch input:checked + .switch-track .switch-thumb{transform:translateX(18px);}
+.switch-icon{font-size:13px; color:var(--muted);}
+
+/* ============ LAYOUT — CSS GRID ============ */
+.app-grid{
+  max-width:1280px; margin:0 auto;
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:28px;
+  padding:32px 28px 60px;
+}
+
+/* ============ SIDEBAR ============ */
+.sidebar{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:22px 20px;
+  height:fit-content;
+  position:sticky; top:96px;
+  box-shadow:var(--shadow);
+}
+.ticket-tab{margin-bottom:20px;}
+.ticket-title{font-family:'Bebas Neue', sans-serif; font-size:24px; letter-spacing:0.5px;}
+.ticket-sub{font-size:12px; color:var(--muted);}
+
+.field-group{margin-bottom:18px;}
+.field-label{
+  display:block; font-size:11px; color:var(--muted);
+  text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px; font-weight:700;
+}
+.field-label-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;}
+.field-label-row .field-label{margin-bottom:0;}
+
+.search-box{
+  display:flex; align-items:center; gap:8px;
+  background:var(--panel-2); border:1px solid var(--line); border-radius:8px;
+  padding:9px 12px;
+}
+.search-box svg{color:var(--muted); flex:none;}
+.search-box input{
+  flex:1; border:none; outline:none; background:none; color:var(--text); font-size:14px; font-family:'Manrope', sans-serif;
+}
+.search-box input::placeholder{color:var(--muted);}
+
+.perforation{
+  height:1px; margin:20px 0;
+  background-image:repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 12px);
+}
+
+.clear-btn{
+  background:none; border:none; color:var(--accent); font-size:11.5px; cursor:pointer;
+  font-family:'Manrope', sans-serif; font-weight:600; padding:0;
+}
+.clear-btn:hover{text-decoration:underline;}
+
+.genre-list{display:flex; flex-direction:column; gap:2px;}
+.genre-item{
+  display:flex; align-items:center; gap:10px;
+  padding:7px 8px; border-radius:6px; cursor:pointer;
+  font-size:13.5px;
+  transition:background .15s ease;
+}
+.genre-item:hover{background:var(--panel-2);}
+.genre-item input{accent-color:var(--accent); width:15px; height:15px; cursor:pointer;}
+.genre-item .g-count{margin-left:auto; color:var(--muted); font-size:11.5px;}
+
+.result-count{
+  margin-top:20px; padding-top:16px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--muted);
+}
+
+/* ============ MOVIE GRID ============ */
+.movie-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+  gap:20px;
+}
+
+.movie-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+  transition:transform .22s cubic-bezier(.4,0,.2,1), border-color .2s ease;
+}
+.movie-card:hover{transform:translateY(-6px) scale(1.015); border-color:var(--accent);}
+.movie-card:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+.poster-wrap{position:relative; aspect-ratio:2/3; overflow:hidden;}
+.poster-wrap img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s ease;}
+.movie-card:hover .poster-wrap img{transform:scale(1.06);}
+
+.rating-badge{
+  position:absolute; top:10px; right:10px;
+  width:36px; height:36px; border-radius:50%;
+  background:var(--accent); color:#1a1310;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Bebas Neue', sans-serif; font-size:14px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.35);
+}
+
+.card-info{padding:12px 14px 16px;}
+.card-title{font-family:'Bebas Neue', sans-serif; font-size:18px; letter-spacing:0.3px; line-height:1.2; margin-bottom:4px;}
+.card-meta{font-size:12px; color:var(--muted); display:flex; gap:8px; align-items:center;}
+.card-genres{display:flex; flex-wrap:wrap; gap:5px; margin-top:8px;}
+.genre-tag{
+  font-size:10.5px; padding:2px 8px; border-radius:12px;
+  background:var(--accent-dim); color:var(--accent); font-weight:700; letter-spacing:0.02em;
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state{
+  text-align:center; padding:80px 20px; color:var(--muted);
+}
+.empty-icon{font-size:40px; margin-bottom:12px;}
+
+/* ============ MODAL ============ */
+.modal-overlay{
+  position:fixed; inset:0; z-index:50;
+  background:rgba(10,7,5,0.72);
+  backdrop-filter:blur(3px);
+  display:flex; align-items:center; justify-content:center;
+  padding:24px;
+}
+.modal{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  max-width:760px; width:100%;
+  max-height:88vh; overflow-y:auto;
+  position:relative;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,0.8);
+  animation:modal-in .22s cubic-bezier(.4,0,.2,1);
+}
+@keyframes modal-in{
+  from{opacity:0; transform:translateY(12px) scale(0.98);}
+  to{opacity:1; transform:translateY(0) scale(1);}
+}
+.modal-close{
+  position:absolute; top:14px; right:14px; z-index:2;
+  width:34px; height:34px; border-radius:50%;
+  background:rgba(0,0,0,0.45); color:#fff; border:none;
+  font-size:15px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:background .18s ease;
+}
+.modal-close:hover{background:rgba(0,0,0,0.7);}
+
+.modal-body{display:grid; grid-template-columns:220px 1fr; gap:0;}
+.modal-poster{width:100%; height:100%; object-fit:cover; display:block; min-height:300px;}
+.modal-detail{padding:28px 28px 32px;}
+.modal-title{font-family:'Bebas Neue', sans-serif; font-size:32px; letter-spacing:0.4px; margin-bottom:6px;}
+.modal-meta{font-size:13px; color:var(--muted); margin-bottom:14px; display:flex; gap:14px; flex-wrap:wrap;}
+.modal-meta strong{color:var(--accent);}
+.modal-genres{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:16px;}
+.modal-desc{font-size:14.5px; color:var(--text); margin-bottom:18px; line-height:1.65;}
+.modal-line{font-size:13.5px; margin-bottom:6px;}
+.modal-line span{color:var(--muted);}
+
+/* ============ FOOTER ============ */
+.site-footer{
+  max-width:1280px; margin:0 auto;
+  padding:24px 28px 60px;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  font-size:12px; color:var(--muted);
+  border-top:1px solid var(--line);
+}
+.foot-links a{text-decoration:none; color:var(--muted);}
+.foot-links a:hover{color:var(--accent);}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px){
+  .app-grid{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .modal-body{grid-template-columns:1fr;}
+  .modal-poster{max-height:220px;}
+}
+
+@media (max-width: 520px){
+  .header-inner{padding:14px 16px;}
+  .brand-name{font-size:22px;}
+  .header-actions{gap:10px;}
+  .prev-link{display:none;}
+  .app-grid{padding:20px 16px 40px; gap:18px;}
+  .movie-grid{grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)); gap:14px;}
+  .card-title{font-size:16px;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .marquee-lights{animation:none;}
+  .movie-card, .switch-thumb, .modal{transition:none; animation:none;}
+}
