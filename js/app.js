@@ -383,18 +383,19 @@ clearGenresBtn.addEventListener("click", () => {
 const THEME_KEY = "cinefind-theme";
 
 function applyTheme(theme){
-  document.documentElement.classList.toggle("light", theme === "light");
-  themeToggle.checked = theme === "light";
+  // Theo đúng yêu cầu đề bài: thêm/xóa class "dark-mode" khỏi thẻ <body>
+  document.body.classList.toggle("dark-mode", theme === "dark");
+  themeToggle.checked = theme === "dark";
 }
 
 function initTheme(){
   const saved = localStorage.getItem(THEME_KEY);
-  const theme = saved || "dark";
+  const theme = saved || "dark"; // mặc định giao diện tối
   applyTheme(theme);
 }
 
 themeToggle.addEventListener("change", () => {
-  const theme = themeToggle.checked ? "light" : "dark";
+  const theme = themeToggle.checked ? "dark" : "light";
   applyTheme(theme);
   localStorage.setItem(THEME_KEY, theme);
 });

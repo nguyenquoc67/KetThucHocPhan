@@ -4,20 +4,7 @@
    ============================================================ */
 
 :root{
-  /* ---- Dark mode (mặc định) ---- */
-  --bg: #120e0c;
-  --panel: #1c1614;
-  --panel-2: #241c19;
-  --line: #33281f;
-  --text: #f2e9dd;
-  --muted: #9c8a7c;
-  --accent: #e3a83b;
-  --accent-2: #b23a2e;
-  --accent-dim: rgba(227,168,59,0.14);
-  --shadow: 0 20px 50px -20px rgba(0,0,0,0.7);
-}
-
-html.light{
+  /* ---- Light mode (mặc định khi không có class) ---- */
   --bg: #f6f1e7;
   --panel: #ffffff;
   --panel-2: #f0e9da;
@@ -28,6 +15,20 @@ html.light{
   --accent-2: #a32e27;
   --accent-dim: rgba(185,130,44,0.12);
   --shadow: 0 20px 50px -20px rgba(36,28,23,0.18);
+}
+
+body.dark-mode{
+  /* ---- Dark mode — thêm class này vào <body> bằng JS ---- */
+  --bg: #120e0c;
+  --panel: #1c1614;
+  --panel-2: #241c19;
+  --line: #33281f;
+  --text: #f2e9dd;
+  --muted: #9c8a7c;
+  --accent: #e3a83b;
+  --accent-2: #b23a2e;
+  --accent-dim: rgba(227,168,59,0.14);
+  --shadow: 0 20px 50px -20px rgba(0,0,0,0.7);
 }
 
 *{box-sizing:border-box; margin:0; padding:0;}
