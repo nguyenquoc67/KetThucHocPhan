@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.77" y2="0.92">
+      <stop offset="0%" stop-color="#0D2B2B"/>
+      <stop offset="100%" stop-color="#1F5C5C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="58%" cy="22%" r="70%">
+      <stop offset="0%" stop-color="#7FE7E7" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#7FE7E7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bg)"/>
+  <rect width="300" height="450" fill="url(#glow)"/>
+  <circle cx="180" cy="138" r="2" fill="#FF6B5B" opacity="0.85"/>
+  <circle cx="195" cy="54" r="1" fill="#FF6B5B" opacity="0.74"/>
+  <circle cx="58" cy="39" r="1" fill="#FF6B5B" opacity="0.8"/>
+  <circle cx="48" cy="159" r="1" fill="#FF6B5B" opacity="0.71"/>
+  <circle cx="114" cy="159" r="1" fill="#FF6B5B" opacity="0.37"/>
+  <circle cx="50" cy="78" r="2" fill="#FF6B5B" opacity="0.67"/>
+  <circle cx="36" cy="82" r="2" fill="#FF6B5B" opacity="0.36"/>
+  <circle cx="51" cy="34" r="1" fill="#FF6B5B" opacity="0.42"/>
+  <circle cx="34" cy="48" r="1" fill="#FF6B5B" opacity="0.8"/>
+  <circle cx="36" cy="104" r="1" fill="#FF6B5B" opacity="0.48"/>
+  <circle cx="52" cy="58" r="1" fill="#FF6B5B" opacity="0.36"/>
+  <circle cx="111" cy="147" r="1" fill="#FF6B5B" opacity="0.71"/>
+  <circle cx="26" cy="30" r="1.5" fill="#FF6B5B" opacity="0.84"/>
+  <circle cx="101" cy="60" r="1" fill="#FF6B5B" opacity="0.3"/>
+  <g opacity="0.9">
+    <circle cx="135" cy="140" r="38" fill="none" stroke="#7FE7E7" stroke-width="6"/>
+    <line x1="163" y1="168" x2="200" y2="205" stroke="#7FE7E7" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="135" cy="140" r="16" fill="#7FE7E7" opacity="0.25"/>
+  </g>
+  <rect width="300" height="450" fill="url(#vig)"/>
+  <rect x="0" y="342" width="300" height="108" fill="url(#fade)"/>
+  <text x="150" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Thành Phố</text>
+  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Sương Mù</text>
+  <rect x="10" y="10" width="280" height="430" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
+</svg>

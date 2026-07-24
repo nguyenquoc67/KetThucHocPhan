@@ -13,7 +13,7 @@ const MOVIES = [
   },
   {
     id: 2, title: "Thị Trấn Không Ngủ", year: 2021, rating: 7.4, ageRating: "T18",
-    genres: ["Kinh dị", "Bí ẩn"], poster: "images/poster-7.svg",
+    genres: ["Kinh dị", "Bí ẩn"], poster: "images/poster-2.svg",
     director: "Ngô Thanh Vân", cast: "Đỗ Thị Hải Yến, Quang Tuấn, Hồng Ánh",
     description: "Một nhà báo trẻ quay về thị trấn quê hương để điều tra loạt vụ mất tích bí ẩn, chỉ để phát hiện cả thị trấn đang che giấu một bí mật đen tối."
   },
@@ -43,49 +43,49 @@ const MOVIES = [
   },
   {
     id: 7, title: "Tay Đua Vĩ Đại", year: 2023, rating: 7.8, ageRating: "T13",
-    genres: ["Hành động", "Thể thao"], poster: "images/poster-8.svg",
+    genres: ["Hành động", "Thể thao"], poster: "images/poster-7.svg",
     director: "Lý Hải", cast: "Huỳnh Đông, Ngô Kiến Huy",
     description: "Một tay đua trẻ vô danh nuôi giấc mơ vô địch giải đua quốc gia, đánh đổi mọi thứ để chứng minh bản thân trên đường đua tốc độ."
   },
   {
     id: 8, title: "Người Giữ Ký Ức", year: 2016, rating: 8.5, ageRating: "T13",
-    genres: ["Khoa học viễn tưởng", "Chính kịch"], poster: "images/poster-1.svg",
+    genres: ["Khoa học viễn tưởng", "Chính kịch"], poster: "images/poster-8.svg",
     director: "Trần Anh Hùng", cast: "Ngô Thanh Vân, Isaac",
     description: "Trong một tương lai nơi cảm xúc bị kiểm soát, một người đàn ông được chọn để lưu giữ toàn bộ ký ức của nhân loại — cả đau khổ lẫn hạnh phúc."
   },
   {
     id: 9, title: "Tiệm Bánh Hạnh Phúc", year: 2021, rating: 7.2, ageRating: "P",
-    genres: ["Lãng mạn", "Chính kịch"], poster: "images/poster-3.svg",
+    genres: ["Lãng mạn", "Chính kịch"], poster: "images/poster-9.svg",
     director: "Đinh Tuấn Vũ", cast: "Nhã Phương, Trường Giang",
     description: "Một đầu bếp thất bại tình trường mở lại tiệm bánh của bà ngoại và vô tình tìm thấy tình yêu mới giữa mùi bánh mì nướng mỗi sớm."
   },
   {
     id: 10, title: "Truy Tìm Kho Báu Cổ", year: 2019, rating: 7.6, ageRating: "T13",
-    genres: ["Hành động", "Hài"], poster: "images/poster-4.svg",
+    genres: ["Hành động", "Hài"], poster: "images/poster-10.svg",
     director: "Nguyễn Quang Huy", cast: "Trấn Thành, Trường Giang, Tiến Luật",
     description: "Ba người bạn thân tình cờ có được tấm bản đồ kho báu cổ và bắt đầu chuyến phiêu lưu dở khóc dở cười xuyên khắp Việt Nam."
   },
   {
     id: 11, title: "Thành Phố Sương Mù", year: 2020, rating: 6.9, ageRating: "T16",
-    genres: ["Bí ẩn", "Kinh dị"], poster: "images/poster-2.svg",
+    genres: ["Bí ẩn", "Kinh dị"], poster: "images/poster-11.svg",
     director: "Lê Văn Kiệt", cast: "Thanh Hằng, Oanh Kiều",
     description: "Một thám tử tư điều tra chuỗi án mạng kỳ lạ chỉ xảy ra vào những đêm sương mù dày đặc bao phủ thành phố."
   },
   {
     id: 12, title: "Ước Mơ Trên Mây", year: 2022, rating: 8.0, ageRating: "P",
-    genres: ["Hoạt hình", "Chính kịch"], poster: "images/poster-9.svg",
+    genres: ["Hoạt hình", "Chính kịch"], poster: "images/poster-12.svg",
     director: "Phan Đăng Di", cast: "Lồng tiếng: Hồng Đào, Thái Hòa",
     description: "Một cô bé mồ côi khám phá ra thế giới trên mây nơi những giấc mơ bị lãng quên vẫn còn sống, và cô phải giúp chúng tìm đường trở về."
   },
   {
     id: 13, title: "Vòng Lặp Thời Gian", year: 2023, rating: 8.4, ageRating: "T13",
-    genres: ["Khoa học viễn tưởng", "Hành động"], poster: "images/poster-1.svg",
+    genres: ["Khoa học viễn tưởng", "Hành động"], poster: "images/poster-13.svg",
     director: "Hàm Trần", cast: "Isaac, Chi Pu, Trương Thế Vinh",
     description: "Một nhà khoa học mắc kẹt trong vòng lặp 24 giờ phải tìm ra cách phá vỡ nó trước khi cả thành phố biến mất vĩnh viễn."
   },
   {
     id: 14, title: "Nhà Trọ Số 7", year: 2018, rating: 7.1, ageRating: "T13",
-    genres: ["Hài", "Chính kịch"], poster: "images/poster-5.svg",
+    genres: ["Hài", "Chính kịch"], poster: "images/poster-14.svg",
     director: "Nhất Trung", cast: "Kiều Minh Tuấn, Việt Hương",
     description: "Cuộc sống dở khóc dở cười của những người thuê trọ trong một khu nhà cũ giữa lòng Sài Gòn, nơi ai cũng có một bí mật riêng."
   },
@@ -93,52 +93,56 @@ const MOVIES = [
   // ---- Phim mới cập nhật (đang chiếu) ----
   {
     id: 15, title: "Thanh Âm Vượt Đại Dương", year: 2026, rating: 9.5, ageRating: "T13",
-    genres: ["Chính kịch", "Âm nhạc"], poster: "images/poster-10.svg",
+    genres: ["Chính kịch", "Âm nhạc"], poster: "images/poster-15.svg",
     director: "Bùi Thạc Chuyên", cast: "Trần Nghĩa, Hoàng Hà, NSND Hồng Vân",
     description: "Hành trình một nghệ sĩ trẻ vượt nửa vòng trái đất để tìm lại tiếng hát đã mất, mang theo âm nhạc kết nối hai thế hệ và hai miền văn hóa."
   },
   {
     id: 16, title: "Thám Tử Lừng Danh Conan: Thiên Thần Sa Ngã Trên Xa Lộ", year: 2026, rating: 9.2, ageRating: "T13",
-    genres: ["Hoạt hình", "Bí ẩn"], poster: "images/poster-2.svg",
+    genres: ["Hoạt hình", "Bí ẩn"], poster: "images/poster-16.svg",
     director: "Chika Nagaoka", cast: "Lồng tiếng: dàn diễn viên lồng tiếng Conan",
     description: "Một vụ án mạng bí ẩn xảy ra ngay trên đường cao tốc buộc nhóm thám tử phải phá án trong lúc chạy đua với thời gian trước khi thảm họa tiếp theo xảy ra."
   },
   {
     id: 17, title: "The Odyssey", year: 2026, rating: 8.7, ageRating: "T16",
-    genres: ["Hành động", "Phiêu lưu"], poster: "images/poster-4.svg",
+    genres: ["Hành động", "Phiêu lưu"], poster: "images/poster-17.svg",
     director: "Christopher Nolan", cast: "Matt Damon, Tom Holland, Anne Hathaway",
     description: "Chuyển thể sử thi từ thiên anh hùng ca Hy Lạp cổ đại, kể lại hành trình gian nan trở về quê hương của người anh hùng sau cuộc chiến thành Troy."
   },
   {
     id: 18, title: "Công Viên Giải Thoát", year: 2026, rating: 8.6, ageRating: "T16",
-    genres: ["Kinh dị", "Hành động"], poster: "images/poster-7.svg",
+    genres: ["Kinh dị", "Hành động"], poster: "images/poster-18.svg",
     director: "Đạo diễn ẩn danh", cast: "Đang cập nhật",
     description: "Một nhóm bạn trẻ mắc kẹt trong công viên giải trí bỏ hoang, nơi trò chơi 'giải thoát' hóa ra là cuộc sinh tồn thật sự khi màn đêm buông xuống."
   },
   {
     id: 19, title: "Minions & Quái Vật", year: 2026, rating: 8.9, ageRating: "P",
-    genres: ["Hoạt hình", "Hài"], poster: "images/poster-5.svg",
+    genres: ["Hoạt hình", "Hài"], poster: "images/poster-19.svg",
     director: "Kyle Balda", cast: "Lồng tiếng: Trấn Thành (bản Việt)",
     description: "Đám Minion tinh nghịch vô tình đánh thức một sinh vật khổng lồ ngủ quên hàng thế kỷ, và giờ cả thế giới phải chung tay dọn dẹp hậu quả."
   },
   {
     id: 20, title: "Lời Nguyền Huyết Tộc", year: 2026, rating: 7.8, ageRating: "T18",
-    genres: ["Kinh dị"], poster: "images/poster-6.svg",
+    genres: ["Kinh dị"], poster: "images/poster-20.svg",
     director: "Đạo diễn ẩn danh", cast: "Đang cập nhật",
     description: "Một gia tộc giàu có che giấu lời nguyền truyền đời suốt nhiều thế hệ, cho đến khi người thừa kế cuối cùng vô tình đánh thức nó."
   },
   {
     id: 21, title: "Quỷ Bất Hồn", year: 2026, rating: 7.0, ageRating: "T16",
-    genres: ["Kinh dị"], poster: "images/poster-7.svg",
+    genres: ["Kinh dị"], poster: "images/poster-21.svg",
     director: "Mắt Biếc (đạo diễn)", cast: "Đang cập nhật",
     description: "Một nghi lễ gọi hồn thất bại để lại hậu quả khôn lường cho ngôi làng nhỏ, nơi ranh giới giữa người sống và vong hồn dần biến mất."
   }
 ];
 
 // ---------- 2. STATE ----------
+const PAGE_SIZE = 8;
+
 const state = {
   search: "",
-  selectedGenres: new Set()
+  selectedGenres: new Set(),
+  sort: "default",
+  page: 1
 };
 
 // ---------- 3. DOM REFS ----------
@@ -148,6 +152,8 @@ const genreList = document.getElementById("genreList");
 const searchInput = document.getElementById("searchInput");
 const resultCount = document.getElementById("resultCount");
 const clearGenresBtn = document.getElementById("clearGenres");
+const sortSelect = document.getElementById("sortSelect");
+const pagination = document.getElementById("pagination");
 const modalOverlay = document.getElementById("modalOverlay");
 const modalBody = document.getElementById("modalBody");
 const modalClose = document.getElementById("modalClose");
@@ -185,6 +191,7 @@ function buildGenreList(){
     cb.addEventListener("change", () => {
       if(cb.checked) state.selectedGenres.add(cb.value);
       else state.selectedGenres.delete(cb.value);
+      state.page = 1;
       renderMovies();
     });
   });
@@ -194,7 +201,7 @@ function buildGenreList(){
 function getFilteredMovies(){
   const keyword = state.search.trim().toLowerCase();
 
-  return MOVIES.filter(movie => {
+  const filtered = MOVIES.filter(movie => {
     const matchesGenre =
       state.selectedGenres.size === 0 ||
       movie.genres.some(g => state.selectedGenres.has(g));
@@ -205,6 +212,22 @@ function getFilteredMovies(){
 
     return matchesGenre && matchesSearch;
   });
+
+  return sortMovies(filtered);
+}
+
+// ---------- 6b. SẮP XẾP ----------
+function sortMovies(list){
+  const sorted = [...list];
+  switch(state.sort){
+    case "rating-desc": sorted.sort((a, b) => b.rating - a.rating); break;
+    case "rating-asc":  sorted.sort((a, b) => a.rating - b.rating); break;
+    case "year-desc":   sorted.sort((a, b) => b.year - a.year); break;
+    case "year-asc":    sorted.sort((a, b) => a.year - b.year); break;
+    case "title-asc":   sorted.sort((a, b) => a.title.localeCompare(b.title, 'vi')); break;
+    default: break; // giữ nguyên thứ tự gốc
+  }
+  return sorted;
 }
 
 // ---------- 7. RENDER DANH SÁCH PHIM ----------
@@ -216,11 +239,19 @@ function renderMovies(){
   if(filtered.length === 0){
     movieGrid.innerHTML = "";
     emptyState.hidden = false;
+    pagination.innerHTML = "";
     return;
   }
   emptyState.hidden = true;
 
-  movieGrid.innerHTML = filtered.map(movie => `
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if(state.page > totalPages) state.page = totalPages;
+  if(state.page < 1) state.page = 1;
+
+  const start = (state.page - 1) * PAGE_SIZE;
+  const pageItems = filtered.slice(start, start + PAGE_SIZE);
+
+  movieGrid.innerHTML = pageItems.map(movie => `
     <article class="movie-card" data-id="${movie.id}" tabindex="0">
       <div class="poster-wrap">
         <img src="${movie.poster}" alt="Poster phim ${movie.title}" loading="lazy">
@@ -243,6 +274,43 @@ function renderMovies(){
     card.addEventListener("keydown", e => {
       if(e.key === "Enter" || e.key === " "){ e.preventDefault(); open(); }
     });
+  });
+
+  renderPagination(totalPages);
+}
+
+// ---------- 7b. PHÂN TRANG ----------
+function goToPage(p){
+  state.page = p;
+  renderMovies();
+  document.querySelector(".content")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPagination(totalPages){
+  if(totalPages <= 1){
+    pagination.innerHTML = "";
+    return;
+  }
+
+  const cur = state.page;
+  const items = [];
+
+  items.push(`<button class="page-btn" data-page="${cur - 1}" ${cur === 1 ? "disabled" : ""} aria-label="Trang trước">‹</button>`);
+
+  const pages = new Set([1, totalPages, cur, cur - 1, cur + 1]);
+  let prev = 0;
+  [...pages].filter(p => p >= 1 && p <= totalPages).sort((a, b) => a - b).forEach(p => {
+    if(prev && p - prev > 1) items.push(`<span class="page-dots">…</span>`);
+    items.push(`<button class="page-btn ${p === cur ? "active" : ""}" data-page="${p}" aria-current="${p === cur ? "page" : "false"}">${p}</button>`);
+    prev = p;
+  });
+
+  items.push(`<button class="page-btn" data-page="${cur + 1}" ${cur === totalPages ? "disabled" : ""} aria-label="Trang sau">›</button>`);
+
+  pagination.innerHTML = items.join("");
+
+  pagination.querySelectorAll(".page-btn[data-page]").forEach(btn => {
+    btn.addEventListener("click", () => goToPage(Number(btn.dataset.page)));
   });
 }
 
@@ -290,15 +358,24 @@ document.addEventListener("keydown", (e) => {
 // ---------- 9. TÌM KIẾM (debounce 350ms) ----------
 const handleSearch = debounce((value) => {
   state.search = value;
+  state.page = 1;
   renderMovies();
 }, 350);
 
 searchInput.addEventListener("input", (e) => handleSearch(e.target.value));
 
+// ---------- 9b. SẮP XẾP ----------
+sortSelect.addEventListener("change", (e) => {
+  state.sort = e.target.value;
+  state.page = 1;
+  renderMovies();
+});
+
 // ---------- 10. BỎ CHỌN TẤT CẢ THỂ LOẠI ----------
 clearGenresBtn.addEventListener("click", () => {
   state.selectedGenres.clear();
   genreList.querySelectorAll(".genre-checkbox").forEach(cb => cb.checked = false);
+  state.page = 1;
   renderMovies();
 });
 

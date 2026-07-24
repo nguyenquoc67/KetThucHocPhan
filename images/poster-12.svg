@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0.79" y2="0.91">
+    <linearGradient id="bg" x1="0" y1="0" x2="0.96" y2="0.7">
       <stop offset="0%" stop-color="#1F0F3D"/>
       <stop offset="100%" stop-color="#7B3FA0"/>
     </linearGradient>
-    <radialGradient id="glow" cx="60%" cy="30%" r="70%">
+    <radialGradient id="glow" cx="71%" cy="29%" r="70%">
       <stop offset="0%" stop-color="#FFD166" stop-opacity="0.30"/>
       <stop offset="60%" stop-color="#FFD166" stop-opacity="0"/>
     </radialGradient>
@@ -20,20 +20,20 @@
   </defs>
   <rect width="300" height="450" fill="url(#bg)"/>
   <rect width="300" height="450" fill="url(#glow)"/>
-  <circle cx="103" cy="68" r="1" fill="#FFE08A" opacity="0.83"/>
-  <circle cx="124" cy="110" r="1.5" fill="#FFE08A" opacity="0.5"/>
-  <circle cx="118" cy="159" r="1" fill="#FFE08A" opacity="0.72"/>
-  <circle cx="29" cy="164" r="1" fill="#FFE08A" opacity="0.42"/>
-  <circle cx="160" cy="61" r="1" fill="#FFE08A" opacity="0.68"/>
-  <circle cx="63" cy="159" r="1.5" fill="#FFE08A" opacity="0.72"/>
-  <circle cx="271" cy="21" r="2" fill="#FFE08A" opacity="0.67"/>
-  <circle cx="213" cy="73" r="1" fill="#FFE08A" opacity="0.6"/>
-  <circle cx="191" cy="154" r="1" fill="#FFE08A" opacity="0.46"/>
-  <circle cx="134" cy="46" r="2" fill="#FFE08A" opacity="0.65"/>
-  <circle cx="237" cy="69" r="2" fill="#FFE08A" opacity="0.63"/>
-  <circle cx="96" cy="102" r="1" fill="#FFE08A" opacity="0.51"/>
-  <circle cx="28" cy="62" r="1" fill="#FFE08A" opacity="0.63"/>
-  <circle cx="67" cy="43" r="1.5" fill="#FFE08A" opacity="0.71"/>
+  <circle cx="57" cy="144" r="2" fill="#F2C879" opacity="0.55"/>
+  <circle cx="80" cy="161" r="2" fill="#F2C879" opacity="0.34"/>
+  <circle cx="232" cy="57" r="1" fill="#F2C879" opacity="0.4"/>
+  <circle cx="233" cy="123" r="1" fill="#F2C879" opacity="0.82"/>
+  <circle cx="208" cy="143" r="1" fill="#F2C879" opacity="0.69"/>
+  <circle cx="201" cy="104" r="1.5" fill="#F2C879" opacity="0.73"/>
+  <circle cx="268" cy="147" r="1" fill="#F2C879" opacity="0.63"/>
+  <circle cx="279" cy="23" r="1" fill="#F2C879" opacity="0.56"/>
+  <circle cx="161" cy="53" r="2" fill="#F2C879" opacity="0.39"/>
+  <circle cx="180" cy="81" r="1.5" fill="#F2C879" opacity="0.47"/>
+  <circle cx="123" cy="94" r="1" fill="#F2C879" opacity="0.4"/>
+  <circle cx="31" cy="81" r="2" fill="#F2C879" opacity="0.75"/>
+  <circle cx="105" cy="148" r="1" fill="#F2C879" opacity="0.82"/>
+  <circle cx="74" cy="65" r="1" fill="#F2C879" opacity="0.71"/>
   <g><circle cx="131" cy="109" r="12" fill="#FFD166" opacity="0.69"/>
     <circle cx="99" cy="195" r="14" fill="#FFD166" opacity="0.44"/>
     <circle cx="164" cy="97" r="14" fill="#FFD166" opacity="0.5"/>
@@ -42,7 +42,7 @@
     <circle cx="162" cy="105" r="9" fill="#FFD166" opacity="0.68"/></g>
   <rect width="300" height="450" fill="url(#vig)"/>
   <rect x="0" y="342" width="300" height="108" fill="url(#fade)"/>
-  <text x="150" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Thế Giới Đồ</text>
-  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Chơi Bí Ẩn</text>
+  <text x="150" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Ước Mơ Trên</text>
+  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Mây</text>
   <rect x="10" y="10" width="280" height="430" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
 </svg>

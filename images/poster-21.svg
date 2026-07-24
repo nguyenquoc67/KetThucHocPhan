@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.95" y2="0.73">
+      <stop offset="0%" stop-color="#1A0A0A"/>
+      <stop offset="100%" stop-color="#5C1414"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#FF6B5B" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#FF6B5B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bg)"/>
+  <rect width="300" height="450" fill="url(#glow)"/>
+  <circle cx="253" cy="70" r="1" fill="#FF6B5B" opacity="0.4"/>
+  <circle cx="224" cy="83" r="1" fill="#FF6B5B" opacity="0.75"/>
+  <circle cx="116" cy="39" r="1.5" fill="#FF6B5B" opacity="0.33"/>
+  <circle cx="241" cy="63" r="1" fill="#FF6B5B" opacity="0.43"/>
+  <circle cx="253" cy="172" r="1.5" fill="#FF6B5B" opacity="0.49"/>
+  <circle cx="86" cy="78" r="1" fill="#FF6B5B" opacity="0.4"/>
+  <circle cx="256" cy="59" r="2" fill="#FF6B5B" opacity="0.63"/>
+  <circle cx="138" cy="136" r="2" fill="#FF6B5B" opacity="0.84"/>
+  <circle cx="114" cy="58" r="2" fill="#FF6B5B" opacity="0.72"/>
+  <circle cx="259" cy="151" r="2" fill="#FF6B5B" opacity="0.49"/>
+  <circle cx="190" cy="80" r="1" fill="#FF6B5B" opacity="0.8"/>
+  <circle cx="177" cy="34" r="2" fill="#FF6B5B" opacity="0.64"/>
+  <circle cx="159" cy="135" r="1" fill="#FF6B5B" opacity="0.33"/>
+  <circle cx="97" cy="97" r="1" fill="#FF6B5B" opacity="0.49"/>
+  <g opacity="0.85">
+    <path d="M120 90 L138 150 L112 158 L160 240 L146 175 L172 168 L120 90 Z" fill="#FF6B5B" opacity="0.9"/>
+    <ellipse cx="150" cy="150" rx="46" ry="30" fill="none" stroke="#FF6B5B" stroke-width="1.5" opacity="0.35"/>
+  </g>
+  <rect width="300" height="450" fill="url(#vig)"/>
+  <rect x="0" y="368" width="300" height="82" fill="url(#fade)"/>
+  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Quỷ Bất Hồn</text>
+  <rect x="10" y="10" width="280" height="430" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
+</svg>

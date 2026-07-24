@@ -1,20 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
   <defs>
-    <linearGradient id="bg4" x1="0" y1="0" x2="0.7" y2="1">
-      <stop offset="0%" stop-color="#1F2C4D"/>
-      <stop offset="100%" stop-color="#4A6FA5"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.89" y2="0.81">
+      <stop offset="0%" stop-color="#3A0A08"/>
+      <stop offset="100%" stop-color="#B3391F"/>
     </linearGradient>
-    <radialGradient id="sp4" cx="50%" cy="28%" r="75%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="47%" cy="23%" r="70%">
+      <stop offset="0%" stop-color="#FF8A50" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#FF8A50" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="vg4" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
-  <rect width="300" height="450" fill="url(#bg4)"/>
-  <rect width="300" height="450" fill="url(#sp4)"/>
-  <g transform="translate(0,0)"><path d="M150 90 L185 108 L185 165 C185 205 165 225 150 232 C135 225 115 205 115 165 L115 108 Z" fill="#fff" opacity="0.9"/><rect x="142" y="130" width="16" height="55" fill="#00000030"/></g>
-  <rect width="300" height="450" fill="url(#vg4)"/>
+  <rect width="300" height="450" fill="url(#bg)"/>
+  <rect width="300" height="450" fill="url(#glow)"/>
+  <circle cx="45" cy="91" r="1.5" fill="#F2C879" opacity="0.61"/>
+  <circle cx="93" cy="108" r="2" fill="#F2C879" opacity="0.34"/>
+  <circle cx="280" cy="91" r="2" fill="#F2C879" opacity="0.81"/>
+  <circle cx="232" cy="114" r="2" fill="#F2C879" opacity="0.39"/>
+  <circle cx="235" cy="100" r="1.5" fill="#F2C879" opacity="0.33"/>
+  <circle cx="35" cy="159" r="1.5" fill="#F2C879" opacity="0.67"/>
+  <circle cx="150" cy="108" r="1" fill="#F2C879" opacity="0.45"/>
+  <circle cx="162" cy="173" r="1" fill="#F2C879" opacity="0.58"/>
+  <circle cx="202" cy="175" r="1" fill="#F2C879" opacity="0.44"/>
+  <circle cx="216" cy="98" r="1" fill="#F2C879" opacity="0.45"/>
+  <circle cx="100" cy="72" r="2" fill="#F2C879" opacity="0.45"/>
+  <circle cx="203" cy="28" r="1" fill="#F2C879" opacity="0.35"/>
+  <circle cx="179" cy="143" r="1" fill="#F2C879" opacity="0.82"/>
+  <circle cx="210" cy="25" r="2" fill="#F2C879" opacity="0.48"/>
+  <g opacity="0.9">
+    <path d="M168 80 L118 190 L148 190 L132 260 L192 150 L158 150 Z" fill="#FF8A50" opacity="0.9"/>
+  </g>
+  <rect width="300" height="450" fill="url(#vig)"/>
+  <rect x="0" y="342" width="300" height="108" fill="url(#fade)"/>
+  <text x="150" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Trận Chiến</text>
+  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Cuối Cùng</text>
+  <rect x="10" y="10" width="280" height="430" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
 </svg>

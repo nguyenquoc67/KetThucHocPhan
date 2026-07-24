@@ -1,20 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450">
   <defs>
-    <linearGradient id="bg7" x1="0" y1="0" x2="0.7" y2="1">
-      <stop offset="0%" stop-color="#0B1D26"/>
-      <stop offset="100%" stop-color="#1E4E5F"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.89" y2="0.81">
+      <stop offset="0%" stop-color="#3A0A08"/>
+      <stop offset="100%" stop-color="#B3391F"/>
     </linearGradient>
-    <radialGradient id="sp7" cx="50%" cy="28%" r="75%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="46%" cy="44%" r="70%">
+      <stop offset="0%" stop-color="#FF8A50" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#FF8A50" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="vg7" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.78"/>
     </linearGradient>
   </defs>
-  <rect width="300" height="450" fill="url(#bg7)"/>
-  <rect width="300" height="450" fill="url(#sp7)"/>
-  <g transform="translate(0,0)"><path d="M115 220 L115 150 C115 115 130 95 150 95 C170 95 185 115 185 150 L185 220 L172 205 L159 220 L146 205 L133 220 L120 205 Z" fill="#fff" opacity="0.88"/><circle cx="138" cy="145" r="6" fill="#0B1D26"/><circle cx="162" cy="145" r="6" fill="#0B1D26"/></g>
-  <rect width="300" height="450" fill="url(#vg7)"/>
+  <rect width="300" height="450" fill="url(#bg)"/>
+  <rect width="300" height="450" fill="url(#glow)"/>
+  <circle cx="266" cy="81" r="1.5" fill="#9BFFCB" opacity="0.39"/>
+  <circle cx="205" cy="23" r="1" fill="#9BFFCB" opacity="0.74"/>
+  <circle cx="65" cy="27" r="2" fill="#9BFFCB" opacity="0.67"/>
+  <circle cx="178" cy="73" r="2" fill="#9BFFCB" opacity="0.68"/>
+  <circle cx="224" cy="114" r="1.5" fill="#9BFFCB" opacity="0.68"/>
+  <circle cx="220" cy="42" r="2" fill="#9BFFCB" opacity="0.42"/>
+  <circle cx="159" cy="142" r="1" fill="#9BFFCB" opacity="0.41"/>
+  <circle cx="106" cy="179" r="1" fill="#9BFFCB" opacity="0.84"/>
+  <circle cx="81" cy="140" r="1" fill="#9BFFCB" opacity="0.72"/>
+  <circle cx="170" cy="120" r="1" fill="#9BFFCB" opacity="0.72"/>
+  <circle cx="191" cy="25" r="1" fill="#9BFFCB" opacity="0.69"/>
+  <circle cx="218" cy="143" r="1" fill="#9BFFCB" opacity="0.75"/>
+  <circle cx="240" cy="95" r="1.5" fill="#9BFFCB" opacity="0.44"/>
+  <circle cx="41" cy="133" r="2" fill="#9BFFCB" opacity="0.5"/>
+  <g opacity="0.9">
+    <path d="M168 80 L118 190 L148 190 L132 260 L192 150 L158 150 Z" fill="#FF8A50" opacity="0.9"/>
+  </g>
+  <rect width="300" height="450" fill="url(#vig)"/>
+  <rect x="0" y="342" width="300" height="108" fill="url(#fade)"/>
+  <text x="150" y="364" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Tay Đua Vĩ</text>
+  <text x="150" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#f5efe4" letter-spacing="0.3">Đại</text>
+  <rect x="10" y="10" width="280" height="430" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
 </svg>
